@@ -1,0 +1,37 @@
+@prefix sapri: <https://w3id.org/cnr-ismar/sap/researchInfrastructure/1.0.0/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rireg: <https://w3id.org/cnr-ismar/research-infrastructures-registry/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix lupo: <https://kos.lifewatch.eu/ontologies/LUPO#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix orcid: <https://orcid.org/> .
+
+<https://w3id.org/cnr-ismar/research-infrastructures-registry/embrc.ttl>
+    rdfs:seeAlso sapri:profile.ttl ;
+    dcterms:conformsTo sapri: ;
+    dcat:version "1.0.0" ;
+    dcterms:created "2026-11-01T15:51:05Z"^^xsd:dateTime ;
+    dcterms:modified "2026-11-01T15:51:05Z"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:creator orcid:0009-0000-9657-919X ;
+    dcat:contactPoint [ a vcard:Individual ; vcard:fn "Federico Bellati" ; vcard:hasEmail <mailto:federico.bellati@cnr.it> ] ;
+    dcterms:publisher [ a prov:Agent, prov:Organization, foaf:Organization ; foaf:name "Istituto di Scienze Marine del Consiglio Nazionale delle Ricerche" ; owl:sameAs <https://ror.org/02hdf6119> ] ;
+    dcterms:rights "The licence (dcterms:license) applies to this metadata record only."@en ;
+    dcterms:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> .
+
+# Official sources checked on 2026-11-01: https://www.embrc.eu/ and https://ri-portfolio.esfri.eu/ri-portfolio/portfolio-editions/2024-first-edition/catalogue/embrc-eric/
+# The description is an English synthesis of these sources.
+# Logo source checked on 2026-11-01: https://ri-portfolio.esfri.eu/ri-portfolio/portfolio-editions/2024-first-edition/catalogue/embrc-eric/ (colour PNG/JPEG logo, legible on a light background).
+rireg:embrc
+    rdf:type lupo:ResearchInfrastructure ;
+    dcterms:title "European Marine Biological Resource Centre"@en ;
+    dcterms:alternative "EMBRC"@en, "EMBRC-ERIC"@en ;
+    foaf:homepage <https://www.embrc.eu/> ;
+    foaf:depiction <https://ri-portfolio.esfri.eu/media/pwyhkig2/logo.png> ;
+    dcterms:description "A distributed European research infrastructure supporting fundamental and applied marine biology and ecology. Through its network of marine stations, it provides access to marine organisms and ecosystems, experimental facilities, laboratory technologies and data services, enabling research on biodiversity and the sustainable use of marine biological resources."@en .
