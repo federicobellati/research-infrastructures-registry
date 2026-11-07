@@ -17,7 +17,7 @@
     dcterms:conformsTo sapri: ;
     dcat:version "1.0.0" ;
     dcterms:created "2026-11-01T15:51:05Z"^^xsd:dateTime ;
-    dcterms:modified "2026-11-01T15:51:05Z"^^xsd:dateTime ;
+    dcterms:modified "2026-11-07T08:09:23Z"^^xsd:dateTime ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:creator orcid:0009-0000-9657-919X ;
     dcat:contactPoint [ a vcard:Individual ; vcard:fn "Federico Bellati" ; vcard:hasEmail <mailto:federico.bellati@cnr.it> ] ;
@@ -34,4 +34,7 @@ rireg:jerico
     dcterms:alternative "JERICO"@en, "JERICO-RI"@en ;
     foaf:homepage <https://www.jerico-ri.eu/> ;
     foaf:depiction <https://www.jerico-ri.eu/download/jerico-ri_logo_and_variations/JERICO-RI-Logo-and-Variations-2x/JERICO-RI-Black-and-colour-PNG.png> ;
+    # Scientific domains selected from EuroSciVoc; labels: oceanography; marine biology.
+    # Classification based on the official scope, checked on 2026-11-07: https://www.jerico-ri.eu/about/
+    dcterms:subject <http://data.europa.eu/8mn/euroscivoc/b0edf9eb-127a-41bc-b0cf-eb3ed9039f0c>, <http://data.europa.eu/8mn/euroscivoc/288627c1-4e51-42b3-b773-f68b39c3b0a9> ;
     dcterms:description "A European research infrastructure bringing together complementary platforms for sustained coastal observation. It combines facilities, environmental measurements and data services to investigate interactions between coastal waters, the open ocean, land and atmosphere, and to support research on changes in coastal marine systems."@en .

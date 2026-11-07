@@ -17,7 +17,7 @@
     dcterms:conformsTo sapri: ;
     dcat:version "1.0.0" ;
     dcterms:created "2026-11-01T15:51:05Z"^^xsd:dateTime ;
-    dcterms:modified "2026-11-01T15:51:05Z"^^xsd:dateTime ;
+    dcterms:modified "2026-11-07T08:09:23Z"^^xsd:dateTime ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:creator orcid:0009-0000-9657-919X ;
     dcat:contactPoint [ a vcard:Individual ; vcard:fn "Federico Bellati" ; vcard:hasEmail <mailto:federico.bellati@cnr.it> ] ;
@@ -34,4 +34,7 @@ rireg:lifewatch
     dcterms:alternative "LifeWatch"@en, "LifeWatch ERIC"@en ;
     foaf:homepage <https://www.lifewatch.eu/> ;
     foaf:depiction <https://ri-portfolio.esfri.eu/media/y5rhi3dt/logo-1.png> ;
+    # Scientific domains selected from EuroSciVoc; labels: ecology; ecosystems.
+    # Classification based on the official scope, checked on 2026-11-07: https://www.lifewatch.eu/science/
+    dcterms:subject <http://data.europa.eu/8mn/euroscivoc/36734fd7-bed0-4ac6-9445-a35869e83091>, <http://data.europa.eu/8mn/euroscivoc/81f1f477-aa96-427a-adf9-7742a429899a> ;
     dcterms:description "A European digital research infrastructure supporting the study of biodiversity and ecosystem functions and services. It brings together data resources, computational tools, analytical workflows and virtual research environments to enable reproducible analyses of biodiversity patterns, environmental change and ecosystem responses, supporting scientific research and evidence-based decision-making."@en .

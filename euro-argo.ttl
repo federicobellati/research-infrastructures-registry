@@ -17,7 +17,7 @@
     dcterms:conformsTo sapri: ;
     dcat:version "1.0.0" ;
     dcterms:created "2026-11-01T15:51:05Z"^^xsd:dateTime ;
-    dcterms:modified "2026-11-01T15:51:05Z"^^xsd:dateTime ;
+    dcterms:modified "2026-11-07T08:09:23Z"^^xsd:dateTime ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:creator orcid:0009-0000-9657-919X ;
     dcat:contactPoint [ a vcard:Individual ; vcard:fn "Federico Bellati" ; vcard:hasEmail <mailto:federico.bellati@cnr.it> ] ;
@@ -34,4 +34,7 @@ rireg:euro-argo
     dcterms:alternative "Euro-Argo"@en, "Euro-Argo ERIC"@en ;
     foaf:homepage <https://www.euro-argo.eu/> ;
     foaf:depiction <https://ri-portfolio.esfri.eu/media/z4oefwqc/logo.png> ;
+    # Scientific domains selected from EuroSciVoc; labels: oceanography; climatology.
+    # Classification based on the official scope, checked on 2026-11-07: https://ri-portfolio.esfri.eu/ri-portfolio/portfolio-editions/2024-first-edition/catalogue/euro-argo-eric/
+    dcterms:subject <http://data.europa.eu/8mn/euroscivoc/b0edf9eb-127a-41bc-b0cf-eb3ed9039f0c>, <http://data.europa.eu/8mn/euroscivoc/caef7888-78d0-473b-b3dc-97d8e9c65073> ;
     dcterms:description "A distributed research infrastructure coordinating European participation in the international Argo programme. It supports the deployment and operation of autonomous profiling floats and the delivery of openly accessible, quality-controlled ocean observations, including temperature, salinity and biogeochemical measurements, for climate research, ocean health assessment and operational oceanography."@en .

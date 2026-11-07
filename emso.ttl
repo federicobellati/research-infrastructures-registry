@@ -17,7 +17,7 @@
     dcterms:conformsTo sapri: ;
     dcat:version "1.0.0" ;
     dcterms:created "2026-11-01T15:51:05Z"^^xsd:dateTime ;
-    dcterms:modified "2026-11-01T15:51:05Z"^^xsd:dateTime ;
+    dcterms:modified "2026-11-07T08:09:23Z"^^xsd:dateTime ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:creator orcid:0009-0000-9657-919X ;
     dcat:contactPoint [ a vcard:Individual ; vcard:fn "Federico Bellati" ; vcard:hasEmail <mailto:federico.bellati@cnr.it> ] ;
@@ -34,4 +34,7 @@ rireg:emso
     dcterms:alternative "EMSO"@en, "EMSO ERIC"@en ;
     foaf:homepage <https://emso.eu/> ;
     foaf:depiction <https://ri-portfolio.esfri.eu/media/4i3pxcen/logo.jpg> ;
+    # Scientific domains selected from EuroSciVoc; labels: oceanography; geophysics; marine biology.
+    # Classification based on the official scope, checked on 2026-11-07: https://emso.eu/what-is-emso/
+    dcterms:subject <http://data.europa.eu/8mn/euroscivoc/b0edf9eb-127a-41bc-b0cf-eb3ed9039f0c>, <http://data.europa.eu/8mn/euroscivoc/84a41eb4-356e-40a4-bc70-216beaf3d33d>, <http://data.europa.eu/8mn/euroscivoc/288627c1-4e51-42b3-b773-f68b39c3b0a9> ;
     dcterms:description "A distributed European research infrastructure collecting sustained observations from fixed platforms on the seafloor and throughout the water column. Its multidisciplinary measurements and services support investigation of ocean processes, climate change, marine ecosystems and geological hazards, combining physical, biogeochemical and geophysical observations."@en .

@@ -17,7 +17,7 @@
     dcterms:conformsTo sapri: ;
     dcat:version "1.0.0" ;
     dcterms:created "2026-11-01T15:51:05Z"^^xsd:dateTime ;
-    dcterms:modified "2026-11-01T15:51:05Z"^^xsd:dateTime ;
+    dcterms:modified "2026-11-07T08:09:23Z"^^xsd:dateTime ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:creator orcid:0009-0000-9657-919X ;
     dcat:contactPoint [ a vcard:Individual ; vcard:fn "Federico Bellati" ; vcard:hasEmail <mailto:federico.bellati@cnr.it> ] ;
@@ -34,4 +34,7 @@ rireg:icos
     dcterms:alternative "ICOS"@en ;
     foaf:homepage <https://www.icos-cp.eu/> ;
     foaf:depiction <https://www.icos-cp.eu/sites/default/files/2020-04/ICOS%20RI_logo_rgb.png> ;
+    # Scientific domains selected from EuroSciVoc; labels: atmospheric sciences; biogeochemistry; oceanography; climatology.
+    # Classification based on the official scope, checked on 2026-11-07: https://www.icos-cp.eu/about
+    dcterms:subject <http://data.europa.eu/8mn/euroscivoc/2660be39-041b-4cee-9bfc-32b28b884bd7>, <http://data.europa.eu/8mn/euroscivoc/98f5f863-7cbf-46a0-84e0-cb319895e0ae>, <http://data.europa.eu/8mn/euroscivoc/b0edf9eb-127a-41bc-b0cf-eb3ed9039f0c>, <http://data.europa.eu/8mn/euroscivoc/caef7888-78d0-473b-b3dc-97d8e9c65073> ;
     dcterms:description "A distributed European research infrastructure providing standardised, high-quality and open observations of atmospheric greenhouse gas concentrations and carbon fluxes between the atmosphere, land and oceans. Its atmosphere, ecosystem and ocean measurements support research on the carbon cycle and climate change."@en .
