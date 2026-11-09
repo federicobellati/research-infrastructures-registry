@@ -1,0 +1,39 @@
+@prefix sapri: <https://w3id.org/cnr-ismar/sap/researchInfrastructure/1.0.0/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rireg: <https://w3id.org/cnr-ismar/research-infrastructures-registry/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix lupo: <https://kos.lifewatch.eu/ontologies/LUPO#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix orcid: <https://orcid.org/> .
+
+<https://w3id.org/cnr-ismar/research-infrastructures-registry/eurofleets.ttl>
+    rdfs:seeAlso sapri:profile.ttl ;
+    dcterms:conformsTo sapri: ;
+    dcat:version "1.0.0" ;
+    dcterms:created "2026-11-09T06:47:39Z"^^xsd:dateTime ;
+    dcterms:modified "2026-11-09T06:47:39Z"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:creator orcid:0009-0000-9657-919X ;
+    dcat:contactPoint [ a vcard:Individual ; vcard:fn "Federico Bellati" ; vcard:hasEmail <mailto:federico.bellati@cnr.it> ] ;
+    dcterms:publisher [ a prov:Agent, prov:Organization, foaf:Organization ; foaf:name "Istituto di Scienze Marine del Consiglio Nazionale delle Ricerche" ; owl:sameAs <https://ror.org/02hdf6119> ] ;
+    dcterms:rights "The licence (dcterms:license) applies to this metadata record only."@en ;
+    dcterms:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> .
+
+# Official sources checked on 2026-11-09: https://www.eurofleets.eu/
+# The description is an English synthesis of these sources and describes the current alliance, not the completed EUROFLEETS+ project.
+# Logo source checked on 2026-11-09: https://www.eurofleets.eu/ (blue PNG logo in the website header, legible on a light background).
+rireg:eurofleets
+    rdf:type lupo:ResearchInfrastructure ;
+    dcterms:title "Eurofleets"@en ;
+    foaf:homepage <https://www.eurofleets.eu/> ;
+    foaf:depiction <https://www.eurofleets.eu/assets/eurofleets-blue.png> ;
+    # Scientific domains selected from EuroSciVoc; labels: oceanography.
+    # Curatorial classification based on the official scope, checked on 2026-11-09: https://www.eurofleets.eu/
+    dcterms:subject <http://data.europa.eu/8mn/euroscivoc/b0edf9eb-127a-41bc-b0cf-eb3ed9039f0c> ;
+    dcterms:description "A European alliance of marine research infrastructures promoting cooperation among institutional owners and operators of research vessels. It brings together research fleets and associated marine equipment, including remotely operated and autonomous underwater vehicles, to improve access to facilities and support multidisciplinary ocean research, observation and innovation for the scientific and industrial communities."@en .

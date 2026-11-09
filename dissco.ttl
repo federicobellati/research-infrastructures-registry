@@ -1,0 +1,40 @@
+@prefix sapri: <https://w3id.org/cnr-ismar/sap/researchInfrastructure/1.0.0/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rireg: <https://w3id.org/cnr-ismar/research-infrastructures-registry/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix lupo: <https://kos.lifewatch.eu/ontologies/LUPO#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix orcid: <https://orcid.org/> .
+
+<https://w3id.org/cnr-ismar/research-infrastructures-registry/dissco.ttl>
+    rdfs:seeAlso sapri:profile.ttl ;
+    dcterms:conformsTo sapri: ;
+    dcat:version "1.0.0" ;
+    dcterms:created "2026-11-09T06:47:39Z"^^xsd:dateTime ;
+    dcterms:modified "2026-11-09T06:47:39Z"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:creator orcid:0009-0000-9657-919X ;
+    dcat:contactPoint [ a vcard:Individual ; vcard:fn "Federico Bellati" ; vcard:hasEmail <mailto:federico.bellati@cnr.it> ] ;
+    dcterms:publisher [ a prov:Agent, prov:Organization, foaf:Organization ; foaf:name "Istituto di Scienze Marine del Consiglio Nazionale delle Ricerche" ; owl:sameAs <https://ror.org/02hdf6119> ] ;
+    dcterms:rights "The licence (dcterms:license) applies to this metadata record only."@en ;
+    dcterms:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> .
+
+# Official sources checked on 2026-11-09: https://www.dissco.eu/dissco/ and https://ri-portfolio.esfri.eu/ri-portfolio/portfolio-editions/2024-first-edition/catalogue/dissco/
+# The description is an English synthesis of these sources.
+# Logo source checked on 2026-11-09: https://ri-portfolio.esfri.eu/ri-portfolio/portfolio-editions/2024-first-edition/catalogue/dissco/ (colour PNG logo, legible on a light background).
+rireg:dissco
+    rdf:type lupo:ResearchInfrastructure ;
+    dcterms:title "Distributed System of Scientific Collections"@en ;
+    dcterms:alternative "DiSSCo"@en ;
+    foaf:homepage <https://www.dissco.eu/> ;
+    foaf:depiction <https://ri-portfolio.esfri.eu/media/zw4hdnx5/logo-1.png> ;
+    # Scientific domains selected from EuroSciVoc; labels: biological sciences; geology.
+    # Curatorial classification based on the official scope, checked on 2026-11-09: https://ri-portfolio.esfri.eu/ri-portfolio/portfolio-editions/2024-first-edition/catalogue/dissco/
+    dcterms:subject <http://data.europa.eu/8mn/euroscivoc/803cff73-504b-41ae-9873-1836c76c15d1>, <http://data.europa.eu/8mn/euroscivoc/65f1cb53-0694-477b-9900-61ac8ad78c67> ;
+    dcterms:description "A distributed European research infrastructure bringing together natural science collections held by museums, botanical gardens and universities. It aims to unify access to physical specimens and their digital representations through shared digitisation, curation and data services. By linking collection information with specimen-derived data and supporting FAIR principles, it enables research on biodiversity and geodiversity and their responses to environmental change."@en .
